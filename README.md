@@ -165,14 +165,14 @@ TechnoStudyProject/
 
 | Test Scenario                 | Status    | Priority  |
 |-------------------------------|-----------|-----------|
-| US_401 - Dropdown Menu        | ✅ Passed  | Medium   |
-| US_402 - Cross Campus         | ✅ Passed  | High     |
-| US_403 - Booking              | ✅ Passed  | High     |
-| US_404 - Blog Page            | ✅ Passed  | Low      |
-| US_405 - Submenu Social Media | ✅ Passed  | Medium   |
-| US_406 - Logo To Homepage     | ✅ Passed  | Medium   |
-| US_407 - Course Details       | ✅ Passed  | High     |
-| US_408 - Terms Of Use         | ✅ Passed  | Medium   |
+| US_501 - Dropdown Menu        | ✅ Passed  | Medium   |
+| US_502 - Cross Campus         | ✅ Passed  | High     |
+| US_503 - Booking              | ✅ Passed  | High     |
+| US_504 - Blog Page            | ✅ Passed  | Low      |
+| US_505 - Submenu Social Media | ✅ Passed  | Medium   |
+| US_506 - Logo To Homepage     | ✅ Passed  | Medium   |
+| US_507 - Course Details       | ✅ Passed  | High     |
+| US_508 - Terms Of Use         | ✅ Passed  | Medium   |
 
 ---
 
@@ -240,6 +240,7 @@ To ensure the project runs correctly, the following libraries must be added to t
 - [Techno Study Website](https://techno.study/)
 - [Techno Study YouTube](https://www.youtube.com/@TechnoStudyTR)
 - [Techno Study Instagram](https://www.instagram.com/technostudy.tr/)
+- [Techno Study LinkedIn](https://www.linkedin.com/company/techno-study-inc/posts/?feedView=all)
 
 ---
 
