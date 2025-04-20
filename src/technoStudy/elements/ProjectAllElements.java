@@ -1,6 +1,8 @@
 package technoStudy.elements;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class ProjectAllElements {
@@ -122,6 +124,26 @@ public class ProjectAllElements {
 
 
     /// TC_503_Elements
+    @FindBy(xpath="//a[@class='tn-atom js-click-zero-stat']")
+    public WebElement applyNowButton; // Apply Now butonu
+    @FindBy(xpath="//input[@name='name']")
+    public WebElement nameInput; //Full name kısmı
+    @FindBy(xpath="//input[@name='email']")
+    public WebElement emailInput; //Email kısmı
+    @FindBy(xpath="//input[@type='tel']")
+    public WebElement phoneInput; //Phone kısmı
+    @FindBy(xpath="//select[@name='country']")
+    public WebElement countrySelect; //Country seçim kısmı
+    @FindBy(xpath="//select[@name='course']")
+    public WebElement courseSelect; //Course seçim kısmı
+    @FindBy(xpath="//select[@name='survey']")
+    public WebElement hearAboutUsSelect; //How did you hear about us kısmı
+    @FindBy(xpath="//div[@class='t-checkbox__indicator']")
+    public WebElement checkBox; //CheckBox onaylama kısmı
+    @FindBy(xpath="(//button[@type='submit'])[2]")
+    public WebElement bookCallButton; //Book a call butonu
+    @FindBy(xpath="(//span[text()='Thank you for your pre-application! '])[2]")
+    public WebElement thankYouMessage; //Teşekkür mesajı
 
 
 
