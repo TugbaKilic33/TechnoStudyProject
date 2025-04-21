@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TechnoStudyCrossBrowser_RegressionTests" parallel="tests">
+    <test name="ChromeRegression">
+        <parameter name="BrowserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="technoStudy.tests.TC_506_LogoToHomepage"/>
+        </classes>
+    </test>
+    <test name="EdgeRegression">
+        <parameter name="BrowserType" value="edge"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="technoStudy.tests.TC_506_LogoToHomepage"/>
+        </classes>
+    </test>
+    <test name="FirefoxRegression">
+        <parameter name="BrowserType" value="firefox"/>
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="technoStudy.tests.TC_506_LogoToHomepage"/>
+        </classes>
+    </test>
+</suite>

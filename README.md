@@ -137,7 +137,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_406.gif" alt="TC_406.gif" width="800" height="500"/>
+<img src="tests_gif/TC_506.gif" alt="TC_406.gif" width="800" height="500"/>
 
 ### **7️⃣ US_507 - Course Details**
 
