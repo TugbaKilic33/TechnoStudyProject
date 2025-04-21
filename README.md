@@ -127,7 +127,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_405.gif" alt="TC_405.gif" width="800" height="500"/>
+<img src="tests_gif/TC_505.gif" alt="TC_505.gif" width="800" height="500"/>
 
 ### **6️⃣ US_506 - Logo To Homepage**
 
