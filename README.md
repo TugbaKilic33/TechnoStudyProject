@@ -107,7 +107,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_403.gif" alt="403" width="800" height="500"/>
+<img src="tests_gif/TC_503.gif" alt="503" width="800" height="500"/>
 
 ### **4️⃣ US_504 - Blog Page**
 
@@ -137,7 +137,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_506.gif" alt="TC_406.gif" width="800" height="500"/>
+<img src="tests_gif/TC_506.gif" alt="TC_506.gif" width="800" height="500"/>
 
 ### **7️⃣ US_507 - Course Details**
 
