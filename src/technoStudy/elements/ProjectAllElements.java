@@ -16,13 +16,11 @@ public class ProjectAllElements {
         PageFactory.initElements(driver, this);
     }
     /// TC_501_Elements
-
     //rifat batir
     //meral bbatir
     //ege batir
     //antalya
     //muratpaşa
-
 
 
 
