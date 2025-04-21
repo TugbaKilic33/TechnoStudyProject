@@ -461,9 +461,6 @@ public class ProjectAllElements {
     @FindBy(xpath = "//li[@class='t228__list_item']//a[text()='Blogs']")
     public WebElement blogsLink; ///ana menu blogs
 
-    @FindBy(xpath = "//a[@class='tn-atom js-click-zero-stat']")
-    public WebElement applyNowButton; ///apply now button ana menu
-
     @FindBy(xpath = "//span[@class='t585__title t-name t-name_xl']//a")
     public WebElement codingBootcampLink; ///coding bootcamps worth it link ana menu
 
