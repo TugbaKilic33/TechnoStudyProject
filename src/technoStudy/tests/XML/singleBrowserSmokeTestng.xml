@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TechnoStudy" parallel="false">
+    <test name="ChromeSmokeTests">
+        <parameter name="BrowserType" value="chrome"/>
+        <groups>
+            <run>
+                <include name="smokeTest"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="technoStudy.tests.TC_506_LogoToHomepage"/>
+<!--            test classlari buraya eklenecek-->
+        </classes>
+    </test>
+</suite>
