@@ -13,17 +13,16 @@ public class TC_503_Methods {
     WebDriver driver;
     Actions action;
     WebDriverWait wait;
-    public ProjectAllElements elements;
+    ProjectAllElements elements;
 
     public TC_503_Methods(WebDriver driver, Actions action, WebDriverWait wait) {
         this.driver = driver;
         this.action = action;
         this.wait = wait;
+        this.elements = new ProjectAllElements(driver);
     }
 
     public void bookingForm() {
-        elements = new ProjectAllElements(driver);
-
         Assert.assertTrue(elements.applyNowButton.isDisplayed(),"Apply Now button is not displayed");
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.applyNowButton));
