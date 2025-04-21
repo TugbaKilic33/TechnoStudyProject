@@ -17,10 +17,9 @@
 
 ## 📝 Project Description
 
-This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.  
-Test scenarios cover core user interactions, accessibility of content, and form functionality.  
+This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.
+Test scenarios cover core user interactions, accessibility of content, and form functionality.
 The framework supports parallel and cross-browser testing and executes via `testng.xml` files grouped as smoke and regression.
-
 
 📅 Features:
 
@@ -47,7 +46,7 @@ TechnoStudyProject/
 │   │        └─XML/                 # XML configuration files
 │   │
 │   └── utility/                    # Helper classes (MyFunc, ConfigReader, etc.)
-│    
+│  
 │
 ├── test-output/                    # TestNG output reports
 │
@@ -163,30 +162,32 @@ TechnoStudyProject/
 
 ## 📊 **Test Coverage Table**
 
-| Test Scenario                 | Status    | Priority  |
-|-------------------------------|-----------|-----------|
-| US_501 - Dropdown Menu        | ✅ Passed  | Medium   |
-| US_502 - Cross Campus         | ✅ Passed  | High     |
-| US_503 - Booking              | ✅ Passed  | High     |
-| US_504 - Blog Page            | ✅ Passed  | Low      |
-| US_505 - Submenu Social Media | ✅ Passed  | Medium   |
-| US_506 - Logo To Homepage     | ✅ Passed  | Medium   |
-| US_507 - Course Details       | ✅ Passed  | High     |
-| US_508 - Terms Of Use         | ✅ Passed  | Medium   |
+
+| Test Scenario                 | Status    | Priority |
+| ----------------------------- | --------- | -------- |
+| US_501 - Dropdown Menu        | ✅ Passed | Medium   |
+| US_502 - Cross Campus         | ✅ Passed | High     |
+| US_503 - Booking              | ✅ Passed | High     |
+| US_504 - Blog Page            | ✅ Passed | Low      |
+| US_505 - Submenu Social Media | ✅ Passed | Medium   |
+| US_506 - Logo To Homepage     | ✅ Passed | Medium   |
+| US_507 - Course Details       | ✅ Passed | High     |
+| US_508 - Terms Of Use         | ✅ Passed | Medium   |
 
 ---
 
 ## 🚀 Tools and Technologies
 
-| Tool / Technology     | Description                                                     |
-|-----------------------|-----------------------------------------------------------------|
-| **Java**              | Programming language                                            |
+
+| Tool / Technology      | Description                                                     |
+| ---------------------- | --------------------------------------------------------------- |
+| **Java**               | Programming language                                            |
 | **Selenium WebDriver** | Web automation framework                                        |
-| **TestNG**            | Testing framework                                               |
-| **TestNG XML**        | Manages test configurations and groups                          |
-| **Maven**             | Dependency management and compilation operations in the project |
-| **Page Object Model** | Reusable and maintainable test design                           |
-| **Git / GitHub**      | Version control and  collabration platform                      |
+| **TestNG**             | Testing framework                                               |
+| **TestNG XML**         | Manages test configurations and groups                          |
+| **Maven**              | Dependency management and compilation operations in the project |
+| **Page Object Model**  | Reusable and maintainable test design                           |
+| **Git / GitHub**       | Version control and  collaboration platform                     |
 
 ---
 
@@ -203,15 +204,16 @@ To ensure the project runs correctly, the following libraries must be added to t
 
 ## 👨‍💻 Project Team
 
-| Name                 | Role                              | User Story     |
-|----------------------|-----------------------------------|----------------|
-| **Tugba Kilic**      | Project Lead - QA Automation Eng. | US_502, US_508 |
-| **Zafer Ataklı**     | QA Automation Engineer            | US_506         |
-| **Nuri Ozturk**      | QA Automation Engineer            | US_503         |
-| **Rıfat Batır**      | QA Automation Engineer            | US_505         |
-| **Azim Korkmaz**     | QA Automation Engineer            | US_504         |
-| **Yigit Cam**        | QA Automation Engineer            | US_501         |
-| **Sibel Oztemel**    | QA Automation Engineer            | US_507         |
+
+| Name              | Role                              | User Story     |
+| ----------------- | --------------------------------- | -------------- |
+| **Tugba Kilic**   | Project Lead - QA Automation Eng. | US_502, US_508 |
+| **Zafer Ataklı** | QA Automation Engineer            | US_506         |
+| **Nuri Ozturk**   | QA Automation Engineer            | US_503         |
+| **Rıfat Batır** | QA Automation Engineer            | US_505         |
+| **Azim Korkmaz**  | QA Automation Engineer            | US_504         |
+| **Yigit Cam**     | QA Automation Engineer            | US_501         |
+| **Sibel Oztemel** | QA Automation Engineer            | US_507         |
 
 > Note: This is a collaborative QA training project.
 
