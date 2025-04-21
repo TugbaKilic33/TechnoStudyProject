@@ -17,6 +17,12 @@ public class ProjectAllElements {
     }
     /// TC_501_Elements
 
+    //rifat batir
+    //meral bbatir
+    //ege batir
+    //antalya
+    //muratpaşa
+
 
 
 
