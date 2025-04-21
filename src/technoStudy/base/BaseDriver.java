@@ -46,7 +46,7 @@ public class BaseDriver {
                 break;
             default:
                 throw new RuntimeException("Unsupported browser type in configuration.properties: " + driver);
-        }
+        } 
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigReader.getIntProperty("pageLoadTimeout")));
