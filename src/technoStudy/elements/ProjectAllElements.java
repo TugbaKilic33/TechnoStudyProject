@@ -16,11 +16,11 @@ public class ProjectAllElements {
         PageFactory.initElements(driver, this);
     }
     /// TC_501_Elements
-    // conflict test
-    // conflict test
-    // conflict test
-    // conflict test
-    // conflict test
+    //rifat batir
+    //meral bbatir
+    //ege batir
+    //antalya
+    //muratpaşa
 
 
 
