@@ -343,13 +343,11 @@ public class ProjectAllElements {
 
 
     /// TC_505_Elements
+    @FindBy(className = "t-sociallinks")
+    public WebElement socialLinkField; ///sosyal medya bölümü
 
-
-
-
-
-
-
+    @FindBy(xpath = "//div[@class='t-sociallinks']//li")
+    public List<WebElement> socialLinks ; /// sosyal medya linkleri
 
 
 
