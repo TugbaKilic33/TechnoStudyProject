@@ -11,10 +11,17 @@ public class TC_505_Methods {
     WebDriverWait wait;
     ProjectAllElements elements;
 
-    public TC_505_Methods(WebDriver driver, Actions action, WebDriverWait wait, ProjectAllElements elements) {
+    public TC_505_Methods(WebDriver driver, Actions action, WebDriverWait wait) {
         this.driver = driver;
         this.action = action;
         this.wait = wait;
         this.elements = new ProjectAllElements(driver);
+    }
+    public void submenuSocialMedia(){
+
+
+
+
+
     }
 }
