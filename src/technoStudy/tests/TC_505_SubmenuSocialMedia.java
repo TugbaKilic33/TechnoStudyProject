@@ -12,6 +12,5 @@ public class TC_505_SubmenuSocialMedia extends BaseDriver{
     public void submenuSocialMediaTest(){
         TC_505_Methods methods = new TC_505_Methods(driver, action, wait);
         methods.submenuSocialMedia();
-
     }
 }
