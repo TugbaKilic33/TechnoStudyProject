@@ -17,12 +17,12 @@
 
 ## 📝 Project Description
 
-This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.  
-Test scenarios cover core user interactions, accessibility of content, and form functionality.  
+This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.
+Test scenarios cover core user interactions, accessibility of content, and form functionality.
 The framework supports parallel and cross-browser testing and executes via `testng.xml` files grouped as smoke and regression.
 
-🌀 The development process was conducted in an **Agile environment**, following **one-week sprints**.  
-We implemented key **Scrum ceremonies** such as **Daily Stand-ups**, **Sprint Planning**, **Backlog Grooming**, and **Sprint Reviews/Retrospectives** to ensure iterative development, team alignment, and continuous improvement.  
+🌀 The development process was conducted in an **Agile environment**, following **one-week sprints**.
+We implemented key **Scrum ceremonies** such as **Daily Stand-ups**, **Sprint Planning**, **Backlog Grooming**, and **Sprint Reviews/Retrospectives** to ensure iterative development, team alignment, and continuous improvement.
 Collaboration and task tracking were maintained using version control and shared documentation.
 
 📅 Features:
@@ -100,7 +100,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_402.gif" alt="402" width="800" height="500"/>
+<img src="tests_gif/TC_502.gif" alt="402" width="800" height="500"/>
 
 ### **3️⃣ US_503 - Booking**
 
@@ -160,7 +160,7 @@ TechnoStudyProject/
 
 ✅ Actual:
 
-<img src="tests_gif/TC_408.gif" alt="TC_408" width="800" height="500"/>
+<img src="tests_gif/TC_508.gif" alt="TC_408" width="800" height="500"/>
 
 ---
 

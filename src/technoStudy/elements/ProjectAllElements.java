@@ -91,7 +91,17 @@ public class ProjectAllElements {
 
 
 
+
+
+
     /// TC_502_Elements
+    @FindBy(xpath = "//a[text()='SIGN IN']")
+    public WebElement signInButton;
+
+    @FindBy(xpath = "//img")
+    public WebElement campusPageLogo;
+
+
 
 
 
@@ -565,7 +575,11 @@ public class ProjectAllElements {
 
     /// TC_508_Elements
 
+    @FindBy(xpath = "(//a[text()='Terms of Use'])[1]")
+    public WebElement termOfUseFormLink;
 
+    @FindBy(xpath = "//strong[text()='Terms of Use']")
+    public WebElement termOfUsePageTitle;
 
 
 
