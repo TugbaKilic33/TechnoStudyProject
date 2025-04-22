@@ -17,9 +17,13 @@
 
 ## 📝 Project Description
 
-This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.
-Test scenarios cover core user interactions, accessibility of content, and form functionality.
+This project automates UI test cases for the [Techno Study Website](https://techno.study/) using **Java**, **TestNG**, **Selenium WebDriver**, and the **Page Object Model (POM)**.  
+Test scenarios cover core user interactions, accessibility of content, and form functionality.  
 The framework supports parallel and cross-browser testing and executes via `testng.xml` files grouped as smoke and regression.
+
+🌀 The development process was conducted in an **Agile environment**, following **one-week sprints**.  
+We implemented key **Scrum ceremonies** such as **Daily Stand-ups**, **Sprint Planning**, **Backlog Grooming**, and **Sprint Reviews/Retrospectives** to ensure iterative development, team alignment, and continuous improvement.  
+Collaboration and task tracking were maintained using version control and shared documentation.
 
 📅 Features:
 
