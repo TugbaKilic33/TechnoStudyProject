@@ -1,6 +1,5 @@
 package technoStudy.methods;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +10,6 @@ import org.testng.Assert;
 import technoStudy.elements.ProjectAllElements;
 
 import java.util.List;
-import java.util.Set;
 
 public class TC_505_Methods {
     WebDriver driver;
@@ -44,7 +42,7 @@ public class TC_505_Methods {
                 }
             }
             wait.until(ExpectedConditions.urlToBe(driver.getCurrentUrl()));
-            Assert.assertTrue(driver.getCurrentUrl().contains(socialList[i]), socialList[i]+" page not displayed!");
+            Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains(socialList[i]), socialList[i]+" page not displayed!");
             i++;
             driver.close();
             driver.switchTo().window(technoStudyWindowID);
