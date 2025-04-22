@@ -86,7 +86,6 @@ public class TC_506_Methods {
                     }
                 }
                 wait.until(ExpectedConditions.urlToBe(driver.getCurrentUrl()));
-                System.out.println("Yeni sekmede URL: " + driver.getCurrentUrl());
 
                 driver.close();
                 driver.switchTo().window(mainWindow);

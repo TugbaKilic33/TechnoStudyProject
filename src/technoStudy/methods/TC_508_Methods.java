@@ -21,7 +21,6 @@ public class TC_508_Methods {
     }
 
     public void termOfUse(){
-
         wait.until(ExpectedConditions.elementToBeClickable(elements.applyNowButton));
         Assert.assertTrue(elements.applyNowButton.isDisplayed(),"Apply Now button is not displayed");
         action.moveToElement(elements.applyNowButton).click().build().perform();
@@ -32,6 +31,5 @@ public class TC_508_Methods {
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.termOfUsePageTitle));
         Assert.assertEquals(elements.termOfUsePageTitle.getText(),"Terms of Use","Terms of Use title is not displayed.");
-
     }
 }

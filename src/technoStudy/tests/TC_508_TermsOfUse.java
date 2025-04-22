@@ -6,6 +6,7 @@ import technoStudy.base.BaseDriver;
 import technoStudy.methods.TC_508_Methods;
 
 public class TC_508_TermsOfUse extends BaseDriver {
+
     @Test
     @Parameters({"BrowserType"})
     public void termOfUseTest(){

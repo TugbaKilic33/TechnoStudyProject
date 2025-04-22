@@ -6,6 +6,7 @@ import technoStudy.base.BaseDriver;
 import technoStudy.methods.TC_502_Methods;
 
 public class TC_502_CrossCampus extends BaseDriver {
+
     @Test
     @Parameters({"BrowserType"})
     public void CrossCampusTest(){
