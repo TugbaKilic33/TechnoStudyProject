@@ -20,16 +20,16 @@ public class TC_508_Methods {
         this.elements = new ProjectAllElements(driver);
     }
 
-    public void termOfUse(){
+    public void termOfUse() {
         wait.until(ExpectedConditions.elementToBeClickable(elements.applyNowButton));
-        Assert.assertTrue(elements.applyNowButton.isDisplayed(),"Apply Now button is not displayed");
+        Assert.assertTrue(elements.applyNowButton.isDisplayed(), "Apply Now button is not displayed");
         action.moveToElement(elements.applyNowButton).click().build().perform();
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.termOfUseFormLink));
-        Assert.assertTrue(elements.termOfUseFormLink.isDisplayed(),"Term Of Use button is not displayed");
+        Assert.assertTrue(elements.termOfUseFormLink.isDisplayed(), "Term Of Use button is not displayed");
         action.scrollToElement(elements.termOfUseFormLink).moveToElement(elements.termOfUseFormLink).click().build().perform();
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.termOfUsePageTitle));
-        Assert.assertEquals(elements.termOfUsePageTitle.getText(),"Terms of Use","Terms of Use title is not displayed.");
+        Assert.assertEquals(elements.termOfUsePageTitle.getText(), "Terms of Use", "Terms of Use title is not displayed.");
     }
 }

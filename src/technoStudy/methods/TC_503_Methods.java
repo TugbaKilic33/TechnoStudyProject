@@ -23,7 +23,7 @@ public class TC_503_Methods {
     }
 
     public void bookingForm() {
-        Assert.assertTrue(elements.applyNowButton.isDisplayed(),"Apply Now button is not displayed");
+        Assert.assertTrue(elements.applyNowButton.isDisplayed(), "Apply Now button is not displayed");
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.applyNowButton));
         action.moveToElement(elements.applyNowButton).click().build().perform();

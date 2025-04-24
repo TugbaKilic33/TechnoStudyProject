@@ -20,12 +20,12 @@ public class TC_502_Methods {
         this.elements = new ProjectAllElements(driver);
     }
 
-    public void crossCampus(){
+    public void crossCampus() {
         wait.until(ExpectedConditions.elementToBeClickable(elements.signInButton));
-        Assert.assertTrue(elements.signInButton.isDisplayed(),"Sign In button is not displayed.");
+        Assert.assertTrue(elements.signInButton.isDisplayed(), "Sign In button is not displayed.");
         action.moveToElement(elements.signInButton).click().build().perform();
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.campusPageLogo));
-        Assert.assertTrue(elements.campusPageLogo.isDisplayed(),"Campus page logo is not displayed.");
+        Assert.assertTrue(elements.campusPageLogo.isDisplayed(), "Campus page logo is not displayed.");
     }
 }

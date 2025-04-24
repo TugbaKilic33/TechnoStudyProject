@@ -22,19 +22,17 @@ public class TC_504_Methods {
     }
 
     public void blogPage() {
-
         wait.until(ExpectedConditions.elementToBeClickable(elements.blogsLink));
         elements.blogsLink.click();
 
+        wait.until(ExpectedConditions.visibilityOf(elements.ourBlog));
+        Assert.assertTrue(elements.ourBlog.isDisplayed(), "Our Blog");
 
-       wait.until(ExpectedConditions.visibilityOf(elements.ourBlog));
-       Assert.assertTrue(elements.ourBlog.isDisplayed(),"Our Blog");
-
-       elements.manualTesting.click();
+        elements.manualTesting.click();
         wait.until(ExpectedConditions.elementToBeClickable(elements.blogsLink));
 
         wait.until(ExpectedConditions.visibilityOf(elements.blockLettering));
-        Assert.assertTrue(elements.blockLettering.isDisplayed(),"Importance of Manual Testing");
+        Assert.assertTrue(elements.blockLettering.isDisplayed(), "Importance of Manual Testing");
 
         elements.blogsLink.click();
         wait.until(ExpectedConditions.elementToBeClickable(elements.blogsLink));
@@ -43,7 +41,7 @@ public class TC_504_Methods {
         elements.flawlessSoftware.click();
 
         wait.until(ExpectedConditions.visibilityOf(elements.modernSDLC));
-        Assert.assertTrue(elements.modernSDLC.isDisplayed(),"Importance of Manual Testing");
+        Assert.assertTrue(elements.modernSDLC.isDisplayed(), "Importance of Manual Testing");
 
         elements.blogsLink.click();
         wait.until(ExpectedConditions.elementToBeClickable(elements.blogsLink));
@@ -55,6 +53,6 @@ public class TC_504_Methods {
         elements.trendsInnovations.click();
 
         wait.until(ExpectedConditions.visibilityOf(elements.poweredTesting));
-        Assert.assertTrue(elements.poweredTesting.isDisplayed(),"The Evolution of Automated QA Testing:");
+        Assert.assertTrue(elements.poweredTesting.isDisplayed(), "The Evolution of Automated QA Testing:");
     }
 }
