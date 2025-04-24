@@ -1,6 +1,5 @@
 package technoStudy.methods;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -25,7 +24,6 @@ public class TC_505_Methods {
     }
 
     public void submenuSocialMedia() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         String technoStudyWindowID = driver.getWindowHandle();
         elements.scrollIntoView(elements.socialLinkField);
         String[] socialList = {"facebook", "instagram", "youtube", "linkedin"};
