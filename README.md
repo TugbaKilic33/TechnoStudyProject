@@ -163,6 +163,9 @@ TechnoStudyProject/
 
 <img src="tests_gif/TC_508.gif" alt="TC_508" width="800" height="500"/>
 
+### 🪲 **Bug Report for US_508**
+<img src="tests_gif/TC_508BugReport.gif" alt="TC_508" width="800" height="500"/>
+
 ---
 
 ## 📊 **Test Coverage Table**
