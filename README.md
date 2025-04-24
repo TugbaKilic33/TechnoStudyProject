@@ -148,9 +148,9 @@ TechnoStudyProject/
 
 ✅ Expected: The Learn More link must lead to the correct course detail page and the page content must be complete.
 
-✅ Actual:
+✅ Actual: The Learn More link lead to the course detail page and the page content was completed, logo was visible.
 
-<img src="tests_gif/TC_407.gif" alt="TC_407.gif" width="800" height="500"/>
+<img src="tests_gif/TC_507.gif" alt="TC_507.gif" width="800" height="500"/>
 
 ### **8️⃣ US_508 - Terms Of Use**
 
@@ -158,7 +158,8 @@ TechnoStudyProject/
 
 ✅ Expected: Terms of Use page should be opened and content should be presented properly.
 
-✅ Actual:
+❌ Actual: **US_508 - The "Terms of Use" page failed due to a missing item. A bug report has been generated and the test case is currently under review and will be updated in the next sprint.**
+
 
 <img src="tests_gif/TC_508.gif" alt="TC_408" width="800" height="500"/>
 
@@ -176,7 +177,7 @@ TechnoStudyProject/
 | US_505 - Submenu Social Media | ✅ Passed | Medium   |
 | US_506 - Logo To Homepage     | ✅ Passed | Medium   |
 | US_507 - Course Details       | ✅ Passed | High     |
-| US_508 - Terms Of Use         | ✅ Passed | Medium   |
+| US_508 - Terms Of Use         | ❌ Failed | Medium   |
 
 ---
 
