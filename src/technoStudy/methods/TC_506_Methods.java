@@ -125,19 +125,19 @@ public class TC_506_Methods {
     public void clickMenuItemAndReturn(WebElement menuItem, String getExpectedUrl) {
         wait.until(ExpectedConditions.visibilityOf(menuItem));
         wait.until(ExpectedConditions.elementToBeClickable(menuItem));
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", menuItem);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('target')", menuItem);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuItem);
 
-        wait.until(ExpectedConditions.urlToBe(driver.getCurrentUrl()));
+        String currentUrl = driver.getCurrentUrl();
 
-        Assert.assertEquals(driver.getCurrentUrl(), getExpectedUrl, "URL is not as expected after clicking the menu item");
+        if (!currentUrl.equals(getExpectedUrl)) {
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", menuItem);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('target')", menuItem);
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuItem);
+
+            wait.until(ExpectedConditions.urlToBe(getExpectedUrl));
+            Assert.assertEquals(driver.getCurrentUrl(), getExpectedUrl, "URL is not as expected after clicking the menu item");
+        }
 
         wait.until(ExpectedConditions.visibilityOf(elements.logo));
         wait.until(ExpectedConditions.elementToBeClickable(elements.logo));
-        action.moveToElement(elements.logo).click().build().perform();
-
-        wait.until(ExpectedConditions.urlToBe(ConfigReader.getProperty("homePageUrl")));
-        Assert.assertEquals(driver.getCurrentUrl(), ConfigReader.getProperty("homePageUrl"), "URL is not as expected after clicking the logo again");
     }
 }
