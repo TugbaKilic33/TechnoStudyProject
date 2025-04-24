@@ -302,6 +302,34 @@ public class ProjectAllElements {
 
 
 
+    @FindBy(xpath = "//span[normalize-space()='Our Blog']")
+    public WebElement ourBlog; /// Our Blog yazısı doğrulama
+
+    @FindBy(xpath = "(//div[@class='t-feed__post-bgimg t-bgimg loaded'])[1]")
+    public WebElement manualTesting; // blok
+
+    @FindBy(xpath = "//strong[normalize-space()='Importance of Manual Testing']")
+    public  WebElement blockLettering; // yazı doğrulama
+
+    @FindBy(xpath = "(//div[@class='t-feed__post-bgimg t-bgimg loaded'])[2]")
+    public  WebElement flawlessSoftware; // blok 2
+
+    @FindBy(xpath = "//strong[normalize-space()='Why the STLC is Crucial for Software Success']")
+    public WebElement modernSDLC;
+
+    @FindBy(xpath = "(//div[@class='t-feed__post-bgimg t-bgimg loaded'])[3]")
+    public WebElement trendsInnovations;
+
+    @FindBy(xpath = "//strong[normalize-space()='The Evolution of Automated QA Testing:']")
+    public  WebElement poweredTesting;
+
+
+
+
+
+
+
+
 
 
 
