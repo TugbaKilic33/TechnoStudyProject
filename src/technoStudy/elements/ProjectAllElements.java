@@ -143,10 +143,10 @@ public class ProjectAllElements {
     public List<WebElement> blogsList;
 
     @FindBy(xpath = "//h2[text()='Choose a program']")
-    public WebElement chooseProgramTitle; // "Choose a Program" section title
+    public WebElement chooseProgramTitle;
 
     @FindBy(xpath = "//a[text()='Learn more']")
-    public List<WebElement> learnMoreButtons; // All "Learn more" buttons
+    public List<WebElement> learnMoreButtons;
 
     @FindBy(xpath = "(//a[text()='Terms of Use'])[1]")
     public WebElement termOfUseFormLink;
