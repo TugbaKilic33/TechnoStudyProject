@@ -29,6 +29,14 @@ public class TC_508_Methods {
         Assert.assertTrue(elements.termOfUseFormLink.isDisplayed(), "Term Of Use button is not displayed");
         action.scrollToElement(elements.termOfUseFormLink).moveToElement(elements.termOfUseFormLink).click().build().perform();
 
+        String originalWindow = driver.getWindowHandle();
+        for (String windowHandle : driver.getWindowHandles()) {
+            if (!windowHandle.equals(originalWindow)) {
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+
         wait.until(ExpectedConditions.elementToBeClickable(elements.termOfUsePageTitle));
         Assert.assertEquals(elements.termOfUsePageTitle.getText(), "Terms of Use", "Terms of Use title is not displayed.");
     }
