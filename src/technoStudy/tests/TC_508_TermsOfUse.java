@@ -1,15 +1,14 @@
 package technoStudy.tests;
 
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import technoStudy.base.BaseDriver;
 import technoStudy.methods.TC_508_Methods;
 
 public class TC_508_TermsOfUse extends BaseDriver {
 
     @Test
-    @Parameters({"BrowserType"})
-    public void termOfUseTest(){
+    @Parameters("BrowserType")
+    public void termOfUseTest() {
         TC_508_Methods methods = new TC_508_Methods(driver, action, wait);
         methods.termOfUse();
     }
