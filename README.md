@@ -158,8 +158,7 @@ TechnoStudyProject/
 
 ✅ Expected: Terms of Use page should be opened and content should be presented properly.
 
-❌ Actual: **US_508 - The "Terms of Use" page failed due to a missing item. A bug report has been generated and the test case is currently under review and will be updated in the next sprint.**
-
+✅ Actual:
 
 <img src="tests_gif/TC_508.gif" alt="TC_408" width="800" height="500"/>
 
@@ -177,7 +176,7 @@ TechnoStudyProject/
 | US_505 - Submenu Social Media | ✅ Passed | Medium   |
 | US_506 - Logo To Homepage     | ✅ Passed | Medium   |
 | US_507 - Course Details       | ✅ Passed | High     |
-| US_508 - Terms Of Use         | ❌ Failed | Medium   |
+| US_508 - Terms Of Use         | ✅ Passed | Medium   |
 
 ---
 
