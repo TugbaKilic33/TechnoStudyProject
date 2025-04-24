@@ -21,7 +21,7 @@ public class ProjectAllElements {
     @FindBy(xpath = "//h1[text()='Data Science Bootcamp']")
     public WebElement dataScienceHomepage; //dataScience ana sayfasındaki yazı
     @FindBy(xpath = "//h1[contains(text(),'Artificial Intelligence')]")
-    public WebElement articialHomepage; //artificialIntelligence ana sayfasındaki yazı
+    public WebElement artificialHomepage; //artificialIntelligence ana sayfasındaki yazı
     @FindBy(xpath = "//div[@data-elem-type='text']//h1")
     public WebElement androidDevHomepage; //AndroidDeveloper ana sayfasındaki yazı
     @FindBy(xpath = "//h1[@class='tn-atom']/strong")
