@@ -33,8 +33,8 @@ public class TC_501_Methods {
 
         action.moveToElement(elements.programs).build().perform();
         elements.artificialIntelligenceLink.click();
-        wait.until(ExpectedConditions.visibilityOf(elements.articialHomepage));
-        Assert.assertTrue(elements.articialHomepage.isDisplayed(), "No text found");
+        wait.until(ExpectedConditions.visibilityOf(elements.artificialHomepage));
+        Assert.assertTrue(elements.artificialHomepage.isDisplayed(), "No text found");
 
         action.moveToElement(elements.programs).build().perform();
         elements.androidDeveloperLink.click();
