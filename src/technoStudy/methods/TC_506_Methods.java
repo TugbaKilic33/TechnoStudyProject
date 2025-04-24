@@ -60,6 +60,7 @@ public class TC_506_Methods {
         action.moveToElement(elements.programs).build().perform();
         clickMenuItemAndReturn(elements.mastersProgramLink, ConfigReader.getProperty("mastersProgramUrl"));
 
+        action.moveToElement(elements.aboutUsLink).build().perform();
         clickMenuItemAndReturn(elements.aboutUsLink, ConfigReader.getProperty("aboutUsUrl"));
         clickMenuItemAndReturn(elements.workWithUsLink, ConfigReader.getProperty("workWithUsUrl"));
 
@@ -125,19 +126,22 @@ public class TC_506_Methods {
     public void clickMenuItemAndReturn(WebElement menuItem, String getExpectedUrl) {
         wait.until(ExpectedConditions.visibilityOf(menuItem));
         wait.until(ExpectedConditions.elementToBeClickable(menuItem));
+        Assert.assertTrue(menuItem.isDisplayed(), "Menu item is not displayed");
+        action.moveToElement(menuItem).click().build().perform();
 
         String currentUrl = driver.getCurrentUrl();
 
         if (!currentUrl.equals(getExpectedUrl)) {
-            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", menuItem);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].removeAttribute('target')", menuItem);
-            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", menuItem);
+            wait.until(ExpectedConditions.elementToBeClickable(menuItem));
+            action.moveToElement(menuItem).click().build().perform();
 
             wait.until(ExpectedConditions.urlToBe(getExpectedUrl));
             Assert.assertEquals(driver.getCurrentUrl(), getExpectedUrl, "URL is not as expected after clicking the menu item");
         }
-
+        wait.until(ExpectedConditions.urlToBe(getExpectedUrl));
+        Assert.assertEquals(driver.getCurrentUrl(), getExpectedUrl, "URL is not as expected after clicking the menu item");
         wait.until(ExpectedConditions.visibilityOf(elements.logo));
         wait.until(ExpectedConditions.elementToBeClickable(elements.logo));
+        elements.logo.click();
     }
 }
