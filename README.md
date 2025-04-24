@@ -148,9 +148,9 @@ TechnoStudyProject/
 
 ✅ Expected: The Learn More link must lead to the correct course detail page and the page content must be complete.
 
-✅ Actual: The Learn More link lead to the course detail page and the page content was completed, logo was visible.
+✅ Actual:
 
-<img src="tests_gif/TC_507.gif" alt="TC_507.gif" width="800" height="500"/>
+<img src="tests_gif/TC_407.gif" alt="TC_407.gif" width="800" height="500"/>
 
 ### **8️⃣ US_508 - Terms Of Use**
 
