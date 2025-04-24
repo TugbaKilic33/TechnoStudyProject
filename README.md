@@ -88,9 +88,9 @@ TechnoStudyProject/
 
 ✅ Expected: The user should be directed to the desired course and all courses should be visible.
 
-✅ Actual:
+✅ Actual: The user was successfully directed to the selected course, and all courses were displayed as expected.
 
-<img src="tests_gif/TC_401.gif" alt="US_401.gif" width="800" height="500"/>
+<img src="tests_gif/TC_501.gif" alt="US_501.gif" width="800" height="500"/>
 
 ### **2️⃣ US_502 Cross Campus**
 
@@ -98,9 +98,9 @@ TechnoStudyProject/
 
 ✅ Expected:  The user should be redirected to the Campus platform login page.
 
-✅ Actual:
+✅ Actual: The user was correctly redirected to the Campus platform login page.
 
-<img src="tests_gif/TC_502.gif" alt="402" width="800" height="500"/>
+<img src="tests_gif/TC_502.gif" alt="502" width="800" height="500"/>
 
 ### **3️⃣ US_503 - Booking**
 
@@ -108,7 +108,7 @@ TechnoStudyProject/
 
 ✅ Expected: The application form must be submitted successfully and a confirmation message must appear.
 
-✅ Actual:
+✅ Actual: The application form was submitted successfully, and the confirmation message was displayed.
 
 <img src="tests_gif/TC_503.gif" alt="503" width="800" height="500"/>
 
@@ -118,9 +118,9 @@ TechnoStudyProject/
 
 ✅ Expected: Blog page should be opened and content should be displayed properly.
 
-✅ Actual:
+✅ Actual: The application form was submitted successfully, and the confirmation message appeared as expected.
 
-<img src="tests_gif/TC_404.gif" alt="404" width="800" height="500"/>
+<img src="tests_gif/TC_504.gif" alt="504" width="800" height="500"/>
 
 ### **5️⃣ US_505 - Submenu Social Media**
 
@@ -128,7 +128,7 @@ TechnoStudyProject/
 
 ✅ Expected: The user should be directed to the relevant social media page.
 
-✅ Actual:
+✅ Actual: The user was successfully directed to the relevant social media page.
 
 <img src="tests_gif/TC_505.gif" alt="TC_505.gif" width="800" height="500"/>
 
@@ -138,7 +138,7 @@ TechnoStudyProject/
 
 ✅ Expected: When the logo is clicked, the user should return to the main page.
 
-✅ Actual:
+✅ Actual: When the logo was clicked, the user was correctly redirected to the main page.
 
 <img src="tests_gif/TC_506.gif" alt="TC_506.gif" width="800" height="500"/>
 
@@ -161,7 +161,7 @@ TechnoStudyProject/
 ❌ Actual: **US_508 - The "Terms of Use" page failed due to a missing item. A bug report has been generated and the test case is currently under review and will be updated in the next sprint.**
 
 
-<img src="tests_gif/TC_508.gif" alt="TC_408" width="800" height="500"/>
+<img src="tests_gif/TC_508.gif" alt="TC_508" width="800" height="500"/>
 
 ---
 
