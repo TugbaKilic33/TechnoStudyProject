@@ -520,6 +520,11 @@ public class ProjectAllElements {
 
 
     /// TC_507_Elements
+    @FindBy(xpath = "//h2[text()='Choose a program']")
+    public WebElement chooseProgramTitle; // "Choose a Program" section title
+    
+    @FindBy(xpath = "//a[@class='tn-atom' and text()='Learn more']")
+    public List<WebElement> learnMoreButtons; // All "Learn more" buttons
 
 
 
