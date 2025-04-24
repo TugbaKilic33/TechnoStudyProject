@@ -42,7 +42,7 @@ public class TC_505_Methods {
                 }
             }
             wait.until(ExpectedConditions.urlToBe(driver.getCurrentUrl()));
-            Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains(socialList[i]), socialList[i]+" page not displayed!");
+            Assert.assertTrue(driver.getCurrentUrl().toLowerCase().contains(socialList[i]), socialList[i] + " page not displayed!");
             i++;
             driver.close();
             driver.switchTo().window(technoStudyWindowID);

@@ -6,6 +6,13 @@
         <parameter name="BrowserType" value="chrome"/>
         <classes>
             <class name="technoStudy.tests.TC_501_DropdownMenu"/>
+            <class name="technoStudy.tests.TC_502_CrossCampus"/>
+            <class name="technoStudy.tests.TC_503_Booking"/>
+            <class name="technoStudy.tests.TC_504_BlogPage"/>
+            <class name="technoStudy.tests.TC_505_SubmenuSocialMedia"/>
+            <class name="technoStudy.tests.TC_506_LogoToHomepage"/>
+            <class name="technoStudy.tests.TC_507_CourseDetails"/>
+            <class name="technoStudy.tests.TC_508_TermsOfUse"/>
         </classes>
     </test>
 </suite>
