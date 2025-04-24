@@ -21,7 +21,7 @@ public class BaseDriver {
     public Actions action;
     public WebDriverWait wait;
 
-    @BeforeClass
+    @BeforeClass(groups = {"smokeTest", "regressionTest"})
     @Parameters("BrowserType")
     public void setup(String browserType) {
         ChromeOptions chromeOptions = new ChromeOptions();
