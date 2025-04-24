@@ -110,7 +110,8 @@ public class TC_506_Methods {
         clickMenuItemAndReturn(elements.logo, ConfigReader.getProperty("homePageUrl"));
         clickMenuItemAndReturn(elements.applyNowButton, ConfigReader.getProperty("applyNowUrl"));
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", elements.codingBootcampLink);
+        action.scrollToElement(elements.codingBootcampLink).build().perform();
+        action.moveToElement(elements.codingBootcampLink).build().perform();
         clickMenuItemAndReturn(elements.codingBootcampLink, ConfigReader.getProperty("codingBootcampUrl"));
 
         elements.scrollIntoView(elements.termsOfUseLink);
