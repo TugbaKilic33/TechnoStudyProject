@@ -41,6 +41,8 @@ Collaboration and task tracking were maintained using version control and shared
 TechnoStudyProject/
 │
 ├── src/
+│   ├── bugReport/                  # Bug report files
+│   │
 │   ├── technoStudy/
 │   │    │ 
 │   │    ├── base/                  # BaseDriver and core structure
@@ -73,6 +75,7 @@ TechnoStudyProject/
 - **src/technoStudy/tests/**: Contains TestNG test scenarios.
 - **src/technoStudy/tests/XML/**: Contains TestNG XML configuration files.
 - **src/technoStudy/utility/**: Contains helper classes like `MyFunc`, `ConfigReader` etc.
+- **src/bugReport/**: Contains bug report files.
 - **test-output/**: Contains TestNG output reports.
 - **tests_gif/**: Contains GIFs demonstrating test scenarios.
 - **configuration.properties/**: Contains configuration files for the project.
