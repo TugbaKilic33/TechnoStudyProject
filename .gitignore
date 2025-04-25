@@ -5,4 +5,5 @@ out/
 
 .idea/
 workspace.xml
-*.iml!
+*.iml
+!/configuration.properties
