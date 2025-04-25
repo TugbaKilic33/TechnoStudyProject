@@ -23,28 +23,31 @@ public class BaseDriver {
     public Actions action;
     public WebDriverWait wait;
 
-    @BeforeClass(groups = {"smokeTest", "regressionTest"})
+    @BeforeClass(groups = {"smokeTest", "regression"})
     @Parameters("BrowserType")
     public void setup(String browserType) {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--lang=en");
         EdgeOptions edgeOptions = new EdgeOptions();
         edgeOptions.addArguments("--lang=en");
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
-        firefoxOptions.addArguments("--lang=en");
 
         switch (browserType.toLowerCase()) {
-            case "edge": driver = new EdgeDriver(edgeOptions); break;
-            case "chrome": driver = new ChromeDriver(chromeOptions); break;
-            case "safari": driver = new SafariDriver(); break;
-            case "firefox": driver = new FirefoxDriver(firefoxOptions); break;
+            case "edge":
+                driver = new EdgeDriver(edgeOptions);
+                break;
+            case "chrome":
+                driver = new ChromeDriver(chromeOptions);
+                break;
+            case "safari":
+                driver = new SafariDriver();
+                break;
             default:
                 throw new RuntimeException("Unsupported browser type in configuration.properties: " + driver);
-        } 
+        }
         driver.manage().deleteAllCookies();
-//        driver.manage().window().maximize();
-        driver.manage().window().setSize(new Dimension(1400, 1100));
-        driver.manage().window().setPosition(new Point(10, 10));
+        driver.manage().window().maximize();
+        //driver.manage().window().setSize(new Dimension(1400, 1100));
+        //driver.manage().window().setPosition(new Point(10, 10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigReader.getIntProperty("pageLoadTimeout")));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getIntProperty("implicitWait")));
         wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getIntProperty("explicitWait")));
@@ -52,7 +55,7 @@ public class BaseDriver {
         driver.get(ConfigReader.getProperty("homePageUrl"));
     }
 
-    @AfterClass
+    @AfterClass(groups = {"smokeTest", "regression"})
     public void tearDown() {
         MyFunc.sleep(2);
         if (driver != null) {
