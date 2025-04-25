@@ -1,5 +1,7 @@
 package technoStudy.base;
 
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.safari.SafariDriver;
@@ -32,23 +34,17 @@ public class BaseDriver {
         firefoxOptions.addArguments("--lang=en");
 
         switch (browserType.toLowerCase()) {
-            case "edge":
-                driver = new EdgeDriver(edgeOptions);
-                break;
-            case "chrome":
-                driver = new ChromeDriver(chromeOptions);
-                break;
-            case "safari":
-                driver = new SafariDriver();
-                break;
-            case "firefox":
-                driver = new FirefoxDriver(firefoxOptions);
-                break;
+            case "edge": driver = new EdgeDriver(edgeOptions); break;
+            case "chrome": driver = new ChromeDriver(chromeOptions); break;
+            case "safari": driver = new SafariDriver(); break;
+            case "firefox": driver = new FirefoxDriver(firefoxOptions); break;
             default:
                 throw new RuntimeException("Unsupported browser type in configuration.properties: " + driver);
         } 
         driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();
+//        driver.manage().window().maximize();
+        driver.manage().window().setSize(new Dimension(1400, 1100));
+        driver.manage().window().setPosition(new Point(10, 10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(ConfigReader.getIntProperty("pageLoadTimeout")));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(ConfigReader.getIntProperty("implicitWait")));
         wait = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getIntProperty("explicitWait")));
@@ -58,7 +54,7 @@ public class BaseDriver {
 
     @AfterClass
     public void tearDown() {
-        MyFunc.sleep(5);
+        MyFunc.sleep(2);
         if (driver != null) {
             driver.quit();
         }
