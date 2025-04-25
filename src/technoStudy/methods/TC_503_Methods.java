@@ -1,6 +1,7 @@
 package technoStudy.methods;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -9,11 +10,15 @@ import org.testng.Assert;
 import technoStudy.elements.ProjectAllElements;
 import utility.ConfigReader;
 
+import java.util.List;
+import java.util.Random;
+
 public class TC_503_Methods {
     WebDriver driver;
     Actions action;
     WebDriverWait wait;
     ProjectAllElements elements;
+    Random random = new Random();
 
     public TC_503_Methods(WebDriver driver, Actions action, WebDriverWait wait) {
         this.driver = driver;
@@ -41,13 +46,19 @@ public class TC_503_Methods {
         wait.until(ExpectedConditions.visibilityOf(elements.countrySelect));
         selectCountry.selectByVisibleText(ConfigReader.getProperty("country"));
 
-        Select selectCourse = new Select(elements.courseSelect);
         wait.until(ExpectedConditions.visibilityOf(elements.courseSelect));
-        selectCourse.selectByValue(ConfigReader.getProperty("course"));
+        Select selectCourse = new Select(elements.courseSelect);
+        List<WebElement> courseOptions = selectCourse.getOptions();
+        int randomCourse = random.nextInt(courseOptions.size() - 1) + 1;
+        wait.until(ExpectedConditions.visibilityOf(elements.courseSelect));
+        selectCourse.selectByIndex(randomCourse);
 
-        Select hearAboutUs = new Select(elements.hearAboutUsSelect);
         wait.until(ExpectedConditions.visibilityOf(elements.hearAboutUsSelect));
-        hearAboutUs.selectByValue(ConfigReader.getProperty("hearAboutUs"));
+        Select hearAboutUs = new Select(elements.hearAboutUsSelect);
+        List<WebElement> hearAboutUsOptions = hearAboutUs.getOptions();
+        int randomHearAboutUs = random.nextInt(hearAboutUsOptions.size() - 1) + 1;
+        wait.until(ExpectedConditions.visibilityOf(elements.hearAboutUsSelect));
+        hearAboutUs.selectByIndex(randomHearAboutUs);
 
         wait.until(ExpectedConditions.elementToBeClickable(elements.checkBox));
         action.moveToElement(elements.checkBox).click().build().perform();
